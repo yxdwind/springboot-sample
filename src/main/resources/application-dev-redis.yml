@@ -1,0 +1,12 @@
+spring:
+  redis:
+    port: 6379
+    host: localhost
+    password: 123456
+    jedis:
+      pool:
+        max-active: 200
+        min-idle: 0
+        max-wait: 60000
+        time-between-eviction-runs: 60000
+

@@ -1,0 +1,35 @@
+#服务配置
+server:
+  port: 8881
+
+#spring配置
+spring:
+  profiles:
+    active: log,dev-jdbc,dev-redis
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+    static-locations:
+  session:
+    store-type: redis
+    timeout: 30
+  cache:
+    type: redis
+    cache-names: sys
+  devtools:
+    add-properties: false
+
+#日志配置
+logging:
+  config: classpath:log4j2.xml
+  fiile:
+    name: error
+    path: ./logs4/
+  level:
+    root: debug
+
+#mybatis配置
+mybatis:
+  config-location: classpath:MybatisConfig.xml
+  mapper-locations: classpath*:com/renfeng/dao/mapping/*.xml
