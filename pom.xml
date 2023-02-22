@@ -33,7 +33,7 @@
         <netty-socketio.version>1.7.17</netty-socketio.version>
         <aspectj.version>1.8.4</aspectj.version>
         <swagger.version>2.9.2</swagger.version>
-        <commons.fileupload.version>1.3.3</commons.fileupload.version>
+        <commons.fileupload.version>1.5</commons.fileupload.version>
         <bitwalker.version>1.19</bitwalker.version>
         <jwt.version>0.9.0</jwt.version>
         <poi.version>3.17</poi.version>
